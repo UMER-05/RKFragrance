@@ -1,0 +1,188 @@
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+.contactus-container{
+  
+  display: grid;
+  place-items : center;
+  padding: 5rem 20rem;
+  margin-top: 6rem;
+}
+.contact{
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+  border-radius: 10px;
+  border: 1px black solid;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+} 
+.contact > div{
+ flex: 1;
+}
+
+
+
+.form-wrapper{
+ display: flex;
+ gap: 5rem 0;
+ flex-direction: column;
+}
+.form-heading{
+ font-size: 5rem;
+ color: #000;
+}
+.form-wrapper form{
+ flex-direction: column;
+ gap: 1.5rem 0;
+}
+form input,
+textarea{
+ width: 40rem;
+ outline: none;
+ border: none;
+ background-color: rgb(72, 72, 72);
+ border-radius: 2rem;
+ font-size: 2rem; 
+ text-align: center;
+ color: white;
+ padding: 1rem 2rem;
+}
+input::placeholder,
+textarea::placeholder{
+ color: #fff;
+}
+textarea{
+
+ resize: vertical;
+ max-height:10rem ;
+ min-height: 5rem;
+ 
+}
+.form-btn{
+ background-color: black;
+}
+@media(max-width: 1650px){
+ .container{
+    padding:5rem ;
+ }
+}
+
+ @media(max-width: 1650px){
+    .contactus-container{
+       padding:3.5rem ;
+    }
+
+}
+
+
+@media(max-width: 1000px){
+ .contactus-container{
+    margin:10 10 10 10 ;
+    
+ }
+ .form-heading{
+    font-size: 1.6rem;
+    color: #3a3a58;
+   }
+form input,
+textarea{
+    
+    width: 28rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    
+}
+
+}
+@media(max-width: 800px){
+    .contactus-container{
+        padding: 1rem 1rem;
+    }
+ 
+    form input,
+    textarea{
+        width: 30rem;
+        height: 5rem;
+    }
+   }
+    @media(max-width: 700px){
+     .contactus-container{
+          padding: 1rem 1rem;
+     }
+     form input,
+     textarea{
+          width: 26rem;
+          height: 4.5rem;
+     }
+    }
+   @media(max-width: 600px){
+    .contactus-container{
+        padding: 1rem 1rem;
+    }
+    form input,
+    textarea{
+        width: 25rem;
+        height: 4rem;
+    }
+   }
+   @media(max-width: 509px){
+    .contactus-container{
+        padding: 1rem 1rem;
+    }
+    .form-heading{
+        font-size: 2rem;
+        color: #3a3a58;
+       }
+    form input,
+    textarea{
+        width: 17rem;
+        height: 3rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+    }
+    input::placeholder,
+textarea::placeholder{
+ color: #fff;
+ font-size: 1rem;
+}
+   }
+    @media(max-width: 400px){
+     .contactus-container{
+          padding: 1rem 1rem;
+     }
+     .form-heading{
+          font-size: 1.8rem;
+          color: #3a3a58;
+         }
+     form input,
+     textarea{
+          width: 15rem;
+          height: 3rem;
+          font-size: 1rem;
+          border-radius: 1rem;
+     }
+    }
+
+   @media(max-width: 300px){
+    .contactus-container{
+        padding: 1rem 1rem;
+    }
+    .form-heading{
+        font-size: 1.6rem;
+        color: #3a3a58;
+       }
+    form input,
+    textarea{
+        
+        width: 13rem;
+        height: 3rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+    }
+   }

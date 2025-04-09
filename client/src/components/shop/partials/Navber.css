@@ -1,0 +1,11 @@
+.navLogoForLargerScreen{
+    top: -0.9rem;
+    width: 18rem;
+    position: relative;
+    margin-left: calc(50% - 9rem);
+}
+.navMenuButton{
+}
+.logoNavSmallScreen{
+    
+}

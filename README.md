@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ### Installing
 
 Installing NPM modules on both client and server folders
@@ -27,7 +25,4 @@ and open another terminal on client directory
 ```
 npm run start
 ```
-
-Access the web app at http://localhost:3000/
->>>>>>> 977c235 (allOrder issue fixed)
 

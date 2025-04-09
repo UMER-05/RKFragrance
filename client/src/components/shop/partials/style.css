@@ -1,0 +1,15 @@
+.userDropdown {
+  display: none;
+}
+
+.userDropdownBtn:hover .userDropdown {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+.whatsappUsImgWrapper{
+  z-index: 64;
+  bottom: 4px;
+  left: 4px;
+}
