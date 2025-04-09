@@ -49,7 +49,7 @@ const AllProduct = ({ products }) => {
                   </span>
                 </div>
               </div>
-              <div>{item.pPrice}.00$</div>
+              <div>Rs. {item.pPrice}.00</div>
             </div>
           ))
         ) : (

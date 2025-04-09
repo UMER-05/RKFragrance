@@ -151,7 +151,7 @@ const AddProductDetail = ({ categories }) => {
                       pName: e.target.value,
                     })
                   }
-                  className="px-4 py-2 border focus:outline-none"
+                  className="px-4 py-2 border focus:outline-none  w-full"
                   type="text"
                 />
               </div>
@@ -168,7 +168,7 @@ const AddProductDetail = ({ categories }) => {
                     })
                   }
                   type="number"
-                  className="px-4 py-2 border focus:outline-none"
+                  className="px-4 py-2 border focus:outline-none w-full"
                   id="price"
                 />
               </div>
@@ -185,7 +185,7 @@ const AddProductDetail = ({ categories }) => {
                     pDescription: e.target.value,
                   })
                 }
-                className="px-4 py-2 border focus:outline-none"
+                className="px-4 py-2 border focus:outline-none w-full"
                 name="description"
                 id="description"
                 cols={5}
@@ -207,7 +207,7 @@ const AddProductDetail = ({ categories }) => {
                 }
                 type="file"
                 accept=".jpg, .jpeg, .png"
-                className="px-4 py-2 border focus:outline-none"
+                className="px-4 py-2 border focus:outline-none w-full"
                 id="image"
                 multiple
               />
@@ -283,7 +283,7 @@ const AddProductDetail = ({ categories }) => {
                     })
                   }
                   type="number"
-                  className="px-4 py-2 border focus:outline-none"
+                  className="px-4 py-2 border focus:outline-none w-full"
                   id="quantity"
                 />
               </div>
@@ -300,7 +300,7 @@ const AddProductDetail = ({ categories }) => {
                     })
                   }
                   type="number"
-                  className="px-4 py-2 border focus:outline-none"
+                  className="px-4 py-2 border focus:outline-none w-full"
                   id="offer"
                 />
               </div>

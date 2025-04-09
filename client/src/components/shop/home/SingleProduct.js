@@ -95,7 +95,7 @@ const SingleProduct = (props) => {
         <span className="rating-count">{item.pRatingsReviews.length}</span>
       </div>
     </div>
-    <div className="product-price">${item.pPrice}.00</div>
+    <div className="product-price">Rs. {item.pPrice}.00</div>
     {/* Wishlist Logic */}
     <div className="wishlist-container">
       <svg
