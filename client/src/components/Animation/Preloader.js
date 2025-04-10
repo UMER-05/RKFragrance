@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useState } from 'react';
 import {preLoaderAnim} from '../Animation';
  import './Preloader.css';
  import preloaderImg1 from './preloaderImg1.jpg';
@@ -6,18 +6,20 @@ import {preLoaderAnim} from '../Animation';
  import preloaderImg3 from './preloaderImg3.png';
 
 const Preloader = () => {
-
-    useEffect(() => {
-        preLoaderAnim();
-      }, []);
+  useEffect(() => {
+    preLoaderAnim();
+  }, []);
   return (
-    <div className='preloader'>
+
+   <div className='preloader'>
     <div className='texts-container'>
     <span><img className='preloaderImg1'src={preloaderImg1} alt='Preloader'/></span>
     <span><img className='preloaderImg2'src={preloaderImg2} alt='Preloader'/></span>
     <span><img className='preloderImg3'src={preloaderImg3} alt='Preloader'/></span>
     </div>
     </div>
+
+    
   )
 }
 

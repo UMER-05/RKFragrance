@@ -1,4 +1,5 @@
 import React, { Fragment, createContext, useReducer } from "react";
+import { useEffect, useState } from "react";
 import Layout from "../layout";
 import Slider from "./Slider";
 import ProductCategory from "./ProductCategory";
@@ -27,11 +28,30 @@ const HomeComponent = () => {
   );
 };
 
-const Home = (props) => {
+const Home = () => {
   const [data, dispatch] = useReducer(homeReducer, homeState);
+
+  const [showAnimation, setShowAnimation] = useState(false);
+
+  useEffect(() => {
+    const hasVisited = sessionStorage.getItem("hasVisited");
+
+    if (!hasVisited) {
+      setShowAnimation(true);
+      sessionStorage.setItem("hasVisited", "true");
+
+      // Auto-hide preloader after 3 seconds (adjust as needed)
+      setTimeout(() => {
+        setShowAnimation(false);
+      }, 3000);
+    }
+  }, []);
+
+  
+  
   return (
     <>  
-    <Preloader/>
+    {showAnimation && <Preloader/>}
     
     <HomeContext.Provider value={{ data, dispatch }}>
   <Layout>        

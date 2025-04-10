@@ -3,6 +3,7 @@ import securePaymentImg from '../../assets/secure-payment.png';
 import longLasting from '../../assets/longLasting.png';
 import fastDelivery from '../../assets/fast-delivery.png';
 import support from '../../assets/support.png';
+import logo from '../../assets/logo.png';
 
 
 
@@ -29,6 +30,7 @@ const prefooterImages =
       <p className="text-gray-800 text-xs">{image.para}</p>
     </div>
   ))}
+  <img src={logo} alt="Logo" className="w-1/3 sm:w-1/3 flex flex-col items-center p-4 rounded-lg md:w-1/3 lg:w-1/5 " />
 </div>
 
 
