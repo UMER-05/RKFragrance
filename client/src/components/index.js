@@ -63,21 +63,21 @@ const Routes = (props) => {
         {/* Admin Routes End */}
 
         {/* User Dashboard */}
-        <ProtectedRoute
+        {/* <ProtectedRoute
           exact={true}
           path="/user/profile"
           component={UserProfile}
-        />
-        <ProtectedRoute
+        /> */}
+        {/* <ProtectedRoute
           exact={true}
           path="/user/orders"
           component={UserOrders}
-        />
-        <ProtectedRoute
+        /> */}
+        {/* <ProtectedRoute
           exact={true}
           path="/user/setting"
           component={SettingUser}
-        />
+        /> */}
         {/* User Dashboard End */}
 
         {/* 404 Page */}

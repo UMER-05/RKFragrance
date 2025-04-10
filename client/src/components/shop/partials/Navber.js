@@ -132,7 +132,7 @@ const Navber = (props) => {
                     {!isAdmin() ? (
                       <Fragment>
                         <li className="flex flex-col text-gray-700 w-48 shadow-lg">
-                          <span
+                          {/* <span
                             onClick={(e) => history.push("/user/orders")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
@@ -153,8 +153,8 @@ const Navber = (props) => {
                               </svg>
                             </span>
                             <span>My Orders</span>
-                          </span>
-                          <span
+                          </span> */}
+                          {/* <span
                             onClick={(e) => history.push("/user/profile")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
@@ -175,7 +175,7 @@ const Navber = (props) => {
                               </svg>
                             </span>
                             <span>My Account</span>
-                          </span>
+                          </span> */}
                           <span
                             onClick={(e) => history.push("/wish-list")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
@@ -198,7 +198,7 @@ const Navber = (props) => {
                             </span>
                             <span>My Wishlist</span>
                           </span>
-                          <span
+                          {/* <span
                             onClick={(e) => history.push("/user/setting")}
                             className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
@@ -223,8 +223,10 @@ const Navber = (props) => {
                                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                                 />
                               </svg>
+                              
                             </span>
-                          </span>
+                            <span>Settings</span>
+                          </span> */}
                           <span
                             onClick={(e) => logout()}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
