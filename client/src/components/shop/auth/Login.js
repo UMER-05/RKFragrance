@@ -57,7 +57,7 @@ const Login = (props) => {
       <form className="space-y-4">
         <div className="flex flex-col">
           <label htmlFor="name">
-            Username or email address
+            Email address
             <span className="text-sm text-gray-600 ml-1">*</span>
           </label>
           <input
@@ -97,7 +97,7 @@ const Login = (props) => {
             <input
               type="checkbox"
               id="rememberMe"
-              className="px-4 py-2 focus:outline-none border mr-1"
+              className="px-4 py-2 focus:outline-none border mr-1 w-4 h-4"
             />
             <label htmlFor="rememberMe">
               Remember me<span className="text-sm text-gray-600">*</span>

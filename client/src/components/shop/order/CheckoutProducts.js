@@ -7,8 +7,17 @@ import { fetchData } from "./Action";
 import { createOrder } from "./FetchApi";
 
 const apiURL = process.env.REACT_APP_API_URL;
-let uId = JSON.parse(localStorage.getItem("jwt")).user._id;
-
+const jwt = localStorage.getItem("jwt");
+let uId = []
+if(jwt){
+  try{
+    const parsedJwt = JSON.parse(jwt);
+    uId = parsedJwt.user?._id || [];
+  }
+  catch (error) {
+    console.error("Failed to parse JWT from localStorage", error);
+  }
+}
 
 
 export const CheckoutComponent = () => {
