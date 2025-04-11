@@ -10,7 +10,10 @@ import {
   ProductByCategory,
   CheckoutPage,
   ContactUs,
-  
+  ReturnPolicy,
+  PrivacyPolicy,
+  ShippingPolicy,
+  TermsNCondition,
 } from "./shop";
 import { DashboardAdmin, Categories, Products, Orders } from "./admin";
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
@@ -27,6 +30,10 @@ const Routes = (props) => {
         <Route exact path="/wish-list" component={WishList} />
         <Route exact path="/products/:id" component={ProductDetails} />
         <Route exact path="/contact-us" component={ContactUs} />
+        <Route exact path="/policies/refund-policy" component={ReturnPolicy} />
+        <Route exact path="/policies/privacy-policy" component={PrivacyPolicy} />
+        <Route exact path="/policies/shipping-policy" component={ShippingPolicy} />
+        <Route exact path="/policies/terms-and-conditions"component={TermsNCondition}/>
         <Route
           exact
           path="/products/category/:catId"

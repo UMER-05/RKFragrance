@@ -31,7 +31,7 @@ const Navber = (props) => {
   return (
     <Fragment>
       {/* Navber Section */}
-      <nav className="fixed top-0 w-full z-20 shadow-lg lg:shadow-none bg-white">
+      <nav className="fixed top-0 w-full z-20 shadow-lg lg:shadow-none bg-white navAll">
         <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3">
           <div className="hidden lg:block col-span-1 flex text-gray-600 mt-1">
             <span
@@ -69,7 +69,7 @@ const Navber = (props) => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             
-            </svg><img src={logoNav} alt="Nav Logo" className="logoNavSmallScreen w-1/2 relative pb-2"/>
+            </svg><img src={logoNav} alt="Nav Logo" className="logoNavSmallScreen w-3/4 relative pb-2"/>
             <span
               onClick={(e) => history.push("/")}
               className=" text-xs  uppercase text-gray-800  cursor-pointer"

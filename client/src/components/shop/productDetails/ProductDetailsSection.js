@@ -130,7 +130,7 @@ const ProductDetailsSection = (props) => {
           <div className="col-span-2 md:col-span-7">
             <div className="relative">
               <img
-                className="w-full"
+                className="w-full rounded-md "
                 src={`${apiURL}/uploads/products/${sProduct.pImages[count]}`}
                 alt="Pic"
               />
@@ -177,7 +177,7 @@ const ProductDetailsSection = (props) => {
               <div className="text-2xl tracking-wider">{sProduct.pName}</div>
               <div className="flex justify-between items-center">
                 <span className="text-xl tracking-wider text-yellow-700">
-                  ${sProduct.pPrice}.00
+                  Rs. {sProduct.pPrice}.00
                 </span>
                 <span>
                   <svg

@@ -11,6 +11,10 @@ import ProductDetails from "./productDetails";
 import ProductByCategory from "./home/ProductByCategory";
 import CheckoutPage from "./order/CheckoutPage";
 import ContactUs from "./contactUs/ContactUs";
+import ReturnPolicy from "./policiesPages/ReturnPolicy";
+import PrivacyPolicy from "./policiesPages/PrivacyPolicy";
+import ShippingPolicy from "./policiesPages/ShippingPolicy";
+import TermsNCondition from "./policiesPages/TermsNCondition";
 export {
   Home,
   WishList,
@@ -26,5 +30,9 @@ export {
   ProductDetails,
   ProductByCategory,
   CheckoutPage,
-  ContactUs
+  ContactUs,
+  ReturnPolicy,
+  PrivacyPolicy,
+  ShippingPolicy,
+  TermsNCondition
 };

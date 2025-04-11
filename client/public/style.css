@@ -12,7 +12,31 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
+@media(max-width: 500px) {
+  html{
+      font-size: 80%;
+  }
+} 
+@media(max-width: 400px) {
+  html{
+      font-size: 70%;
+  }
+} 
+@media(max-width: 300px) {
+  .navAll{
+      font-size: 65%;
+  }
+} 
+@media(max-width: 240px) {
+  .navAll{
+      font-size: 60%;
+  }
+} 
+@media(max-width: 240px) {
+  .navAll{
+      font-size: 40%;
+  }
+} 
 /* Sections
    ========================================================================== */
 
