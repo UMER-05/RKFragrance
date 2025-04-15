@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Layout from "../layout";
+import PreFooter from '../partials/PreFooter';
 function ReturnPolicy() {
   return (
-    
-<div class="max-w-4xl mx-auto px-6 py-12">
+    <Layout>
+<div class="mt-16 max-w-4xl mx-auto px-6 py-12">
   <h1 class="text-4xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-2">Refund Policy</h1>
 
   <p class="text-gray-700 mb-4">
@@ -54,8 +55,8 @@ function ReturnPolicy() {
     Once your return is received and inspected, we’ll notify you about the status. If approved, a refund will be processed to your original payment method within 10 business days.
   </p>
 </div>
-
-
+<PreFooter/>
+</Layout>
   )
 }
 

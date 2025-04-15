@@ -1,9 +1,12 @@
 import React from 'react'
+import Layout from "../layout";
+import PreFooter from '../partials/PreFooter';
 
 const TermsNCondition = () => {
   return (
-    <>
-    <div className="bg-white text-gray-800 px-6 md:px-16 py-12 font-sans">
+    <>    
+    <Layout>
+    <div className="mt-16 bg-white text-gray-800 px-6 md:px-16 py-12 font-sans">
   <header className="text-center mb-10">
     <h1 className="text-4xl font-bold text-black mb-2">Terms of Service</h1>
     <p className="text-sm text-gray-500">Last updated: April 11, 2025</p>
@@ -303,12 +306,13 @@ const TermsNCondition = () => {
         <p>
           Our contact information is posted below:<br />
           Rohail Kamal Fragrance<br />
-          rohailkamal@gmail.com        </p>
+          rohailkamal@gmail.com </p>
       </div>
     </section>
   </main>
 </div>
-
+<PreFooter/>
+</Layout>
     </>
   )
 }

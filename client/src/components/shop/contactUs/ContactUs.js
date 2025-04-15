@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./contactUs.css";
- import Layout from "../layout";
+import Layout from "../layout";
+import PreFooter from "../partials/PreFooter";
+import FeatureIconCard from "../partials/FeatureIconCard";
 
-
- const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = process.env.REACT_APP_API_URL;
 function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
@@ -76,6 +77,8 @@ function ContactUs() {
         </div>
       </div>
     </div>
+    <FeatureIconCard/>
+    <PreFooter/>
     </Layout>
     </>
   );

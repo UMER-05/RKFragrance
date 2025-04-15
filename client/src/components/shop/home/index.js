@@ -8,6 +8,7 @@ import SingleProduct from "./SingleProduct";
 import Preloader from "../../Animation/Preloader";
 import PreFooter from "../partials/PreFooter";
 import WhatsappUs from "../partials/WhatsappUs";
+import FeatureIconCard from "../partials/FeatureIconCard";
 export const HomeContext = createContext();
 
 const HomeComponent = () => {
@@ -43,7 +44,7 @@ const Home = () => {
       // Auto-hide preloader after 3 seconds (adjust as needed)
       setTimeout(() => {
         setShowAnimation(false);
-      }, 3000);
+      }, 7000);
     }
   }, []);
 
@@ -57,7 +58,8 @@ const Home = () => {
   <Layout>        
     <HomeComponent />
     <WhatsappUs />
-    <PreFooter />  
+    <FeatureIconCard />
+    <PreFooter />
   </Layout>
     </HomeContext.Provider>
     </>

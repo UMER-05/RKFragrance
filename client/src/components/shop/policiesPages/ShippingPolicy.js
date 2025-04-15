@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from "../layout";
+import PreFooter from '../partials/PreFooter';
 
 const ShippingPolicy = () => {
   return (
-<div className="bg-white text-gray-800 px-6 md:px-16 py-12 font-sans">
+    <Layout>
+<div className="mt-16 bg-white text-gray-800 px-6 md:px-16 py-12 font-sans">
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-black mb-2">Shipping Policy</h1>
         <p className="text-sm text-gray-500">Last updated: April 11, 2025</p>
@@ -67,6 +70,8 @@ const ShippingPolicy = () => {
         &copy; {new Date().getFullYear()} Fragsens. All rights reserved.
       </footer>
     </div>
+    <PreFooter/>
+    </Layout>
   )
 }
 

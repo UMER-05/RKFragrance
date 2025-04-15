@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Layout from "../layout";
+import PreFooter from '../partials/PreFooter';
 function PrivacyPolicy() {
   return (
-<div className="bg-white text-gray-800 px-6 md:px-16 py-12 font-sans">
+  <Layout >
+<div className="bg-white text-gray-800 mt-16 px-6 md:px-16 py-12 font-sans">
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-black mb-2">Privacy Policy</h1>
         <p className="text-sm text-gray-500">Last updated: April 11, 2025</p>
@@ -119,6 +121,8 @@ function PrivacyPolicy() {
         </main>
       </div>
     </div>
+    <PreFooter/>
+    </Layout>
 
         );
       }

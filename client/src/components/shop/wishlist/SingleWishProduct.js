@@ -44,7 +44,7 @@ const Product = () => {
   }
   return (
     <Fragment>
-      <div className="grid grid-cols-2 md:grid-cols-1">
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-1">
         {products.length > 0 ? (
           products.map((product, index) => {
             return (
@@ -111,7 +111,7 @@ const SingleWishProduct = (props) => {
   return (
     <Fragment>
       <section className="mx-4 mt-20 md:mx-12 md:mt-32 lg:mt-24">
-        <div className="text-2xl mx-2 mb-6">Wishlist</div>
+        <div className="text-2xl mx-2 pt-10">Wishlist</div>
         {/* Product List */}
         <Product />
       </section>

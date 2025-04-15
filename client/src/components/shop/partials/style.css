@@ -13,3 +13,9 @@
   bottom: 4px;
   left: 4px;
 }
+.quickLinks{
+ color: white;
+}
+.quickLinks:hover{
+  color: blue;
+}
