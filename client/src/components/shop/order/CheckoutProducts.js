@@ -103,7 +103,7 @@ const allProduct = cartItems.map((item) => ({
   return (
     <Fragment>
       <section className="mx-4 mt-20 md:mx-12 md:mt-32 lg:mt-24">
-        <div className="text-2xl mx-2 mb-4">Order</div>
+        <div className="text-2xl mx-2 mb-4 pt-8">Order</div>
 
         {state.success && (
           <div className="bg-green-200 text-green-800 px-4 py-2 rounded mb-4">
@@ -121,6 +121,18 @@ const allProduct = cartItems.map((item) => ({
               <div className="mb-6">
                 <h2 className="text-lg font-semibold mb-2">Select Payment Method</h2>
                 <div className="flex space-x-4">
+                 
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="paymentMethod"
+                      value="cod"
+                      defaultChecked={true}
+                     checked={state.paymentMethod === "cod"}
+                      onChange={(e) => setState({ ...state, paymentMethod: e.target.value })}
+                    />
+                    <span>Cash on Delivery</span>
+                  </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
@@ -130,16 +142,6 @@ const allProduct = cartItems.map((item) => ({
                       onChange={(e) => setState({ ...state, paymentMethod: e.target.value })}
                     />
                     <span>Pay Online</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="paymentMethod"
-                      value="cod"
-                      checked={state.paymentMethod === "cod"}
-                      onChange={(e) => setState({ ...state, paymentMethod: e.target.value })}
-                    />
-                    <span>Cash on Delivery</span>
                   </label>
                 </div>
               </div>
@@ -191,23 +193,26 @@ const CheckoutProducts = ({ products }) => {
       <div className="grid grid-cols-2 md:grid-cols-1">
         {products && products.length > 0 ? (
           products.map((product, index) => (
-            <div
+           <> <div
               key={index}
               className="col-span-1 m-2 md:py-6 md:border-t md:border-b md:my-2 md:mx-0 md:flex md:items-center md:justify-between"
             >
               <div className="md:flex md:items-center md:space-x-4">
                 <img
                   onClick={() => history.push(`/products/${product._id}`)}
-                  className="cursor-pointer md:h-20 md:w-20 object-cover object-center"
+                  className="rounded cursor-pointer md:h-20 md:w-20 object-cover object-center"
                   src={`${apiURL}/uploads/products/${product.pImages[0]}`}
                   alt="checkout-product"
                 />
                 <div className="text-lg md:ml-6 truncate">{product.pName}</div>
-                <div className="md:ml-6 font-semibold text-gray-600 text-sm">Price : ${product.pPrice}.00</div>
+                <div className="md:ml-6 font-semibold text-gray-600 text-sm">Price :Rs. {product.pPrice}.00</div>
                 <div className="md:ml-6 font-semibold text-gray-600 text-sm">Quantity : {quantity(product._id)}</div>
-                <div className="font-semibold text-gray-600 text-sm">Subtotal : ${subTotal(product._id, product.pPrice)}.00</div>
+                <div className="font-semibold text-gray-600 text-sm">Subtotal :Rs.  {subTotal(product._id, product.pPrice)}.00</div>
               </div>
             </div>
+            <h3 className="pt-4">🛒<strong> Free delivery</strong> on orders over Rs. 2000! <br/>Orders below Rs. 2000 will have a Rs. 250 delivery fee.</h3>
+
+            </>
           ))
         ) : (
           <div>No product found for checkout</div>
